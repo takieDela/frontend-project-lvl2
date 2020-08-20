@@ -1,5 +1,14 @@
-// import gendiff from '../dist/gendiff'
+import gendiff from '../src/gendiff'
 
-// test('adds 1 + 2 to equal 3', () => {
-//   expect(sum(1, 2)).toBe(3);
-// });
+const expectedString = `{
+  - follow: false
+    host: hexlet.io
+  - proxy: 123.234.53.22
+  - timeout: 50
+  + timeout: 20
+  + verbose: true
+}`;
+
+test('comparing json', () => {
+  expect(gendiff('filepath1.json', 'filepath2.json')).toEqual(expectedString);
+});

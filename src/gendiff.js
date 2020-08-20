@@ -59,7 +59,7 @@ const customOutput = (array) => {
   
   const result = array.sort(alphabetSortBySign).sort(alphabetSortByKey);
 
-  return `{\n${result.map(item => ` ${item.join(` `)}`).join(`\n`)}\n}`;
+  return `{\n${result.map(item => `  ${item.join(` `)}`).join(`\n`)}\n}`;
 };
 
 export default findDiff;

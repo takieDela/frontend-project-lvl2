@@ -7,7 +7,7 @@
     "gendiff": "bin/gendiff.js"
   },
   "scripts": {
-    "build": "bin/gendiff.js"
+    "test": "npx -n --experimental-vm-modules jest"
   },
   "repository": {
     "type": "git",
@@ -21,8 +21,9 @@
   "homepage": "https://github.com/takieDela/frontend-project-lvl2#readme",
   "type": "module",
   "dependencies": {
-    "fs": "0.0.1-security",
+    "@jest/globals": "^26.4.1",
     "commander": "^5.1.0",
+    "fs": "0.0.1-security",
     "lodash": "^4.17.19"
   },
   "devDependencies": {
@@ -33,6 +34,8 @@
     "eslint": "^7.6.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "^2.22.0",
-    "jest": "^26.4.0"
+    "eslint-plugin-jest": "^23.20.0",
+    "jest": "^26.4.0",
+    "jest-cli": "^26.4.1"
   }
 }
