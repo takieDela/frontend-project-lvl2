@@ -1,4 +1,4 @@
-import gendiff from '../src/gendiff'
+import gendiff from '../src/gendiff';
 
 const expectedString = `{
   - follow: false
