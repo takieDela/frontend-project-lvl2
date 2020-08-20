@@ -2,7 +2,10 @@
   "name": "frontend-project-lvl2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/gendiff.js",
+  "bin": {
+    "gendiff": "bin/gendiff.js"
+  },
   "scripts": {
     "build": "bin/gendiff.js"
   },
@@ -16,11 +19,20 @@
     "url": "https://github.com/takieDela/frontend-project-lvl2/issues"
   },
   "homepage": "https://github.com/takieDela/frontend-project-lvl2#readme",
-  "bin": {
-    "gendiff": "bin/gendiff.js"
+  "type": "module",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "commander": "^5.1.0",
+    "lodash": "^4.17.19"
   },
-  "dependencies": {},
   "devDependencies": {
-    "commander": "^5.1.0"
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "jest": "^26.4.0"
   }
 }
