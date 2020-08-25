@@ -20,6 +20,10 @@
   },
   "homepage": "https://github.com/takieDela/frontend-project-lvl2#readme",
   "type": "module",
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {}
+  },
   "dependencies": {
     "@jest/globals": "^26.4.1",
     "commander": "^5.1.0",
