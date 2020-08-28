@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import fs from 'fs';
+import parse from './parsers.js';
 
 const customOutput = (array) => {
   const alphabetSortByKey = (a, b) => {
@@ -31,10 +31,8 @@ const customOutput = (array) => {
 };
 
 const findDiff = (filepath1, filepath2) => {
-  const firstData = fs.readFileSync(filepath1);
-  const secondData = fs.readFileSync(filepath2);
-  const firstObj = JSON.parse(firstData);
-  const secondObj = JSON.parse(secondData);
+  const firstObj = parse(filepath1);
+  const secondObj = parse(filepath2);
 
   const mergedKeys = _.uniq([...Object.keys(firstObj), ...Object.keys(secondObj)]);
 

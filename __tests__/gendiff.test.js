@@ -10,5 +10,9 @@ const expectedString = `{
 }`;
 
 test('comparing json', () => {
-  expect(gendiff('__fixtures__/filepath1.json', '__fixtures__/filepath2.json')).toEqual(expectedString);
+  expect(gendiff('filepath1.json', 'filepath2.json')).toEqual(expectedString);
+});
+
+test('comparing yaml', () => {
+  expect(gendiff('filepath1.yml', 'filepath2.yml')).toEqual(expectedString);
 });

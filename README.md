@@ -4,3 +4,5 @@
 ![Node.js CI](https://github.com/takieDela/frontend-project-lvl2/workflows/Node.js%20CI/badge.svg)
 
 [![asciicast](https://asciinema.org/a/DoZoq4grwALViEhyEKjycrNGo.svg)](https://asciinema.org/a/DoZoq4grwALViEhyEKjycrNGo)
+
+[![asciicast](https://asciinema.org/a/558asJgsFf9mUnQqSNHGaGe5R.svg)](https://asciinema.org/a/558asJgsFf9mUnQqSNHGaGe5R)
