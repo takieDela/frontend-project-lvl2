@@ -16,3 +16,7 @@ test('comparing json', () => {
 test('comparing yaml', () => {
   expect(gendiff('filepath1.yml', 'filepath2.yml')).toEqual(expectedString);
 });
+
+test('comparing ini', () => {
+  expect(gendiff('filepath1.ini', 'filepath2.ini')).toEqual(expectedString);
+});
