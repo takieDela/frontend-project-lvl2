@@ -1,4 +1,4 @@
-export default `{
+{
     common: {
         setting1: Value 1
       - setting2: 200
@@ -43,4 +43,4 @@ export default `{
             }
         }
     }
-}`;
+}
