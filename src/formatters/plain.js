@@ -15,13 +15,13 @@ const statusMapping = {
   unchanged: () => [],
 };
 
-const plain = (ast, path = []) => {
-  const iter = (node, pathPiece) => {
-    const mergePath = [...pathPiece, node.keyName];
+const plain = (ast, pathPieces = []) => {
+  const iter = (node, collectedPathPieces) => {
+    const mergePath = [...collectedPathPieces, node.keyName];
     return statusMapping[node.status](node, mergePath, plain);
   };
 
-  return ast.map((item) => iter(item, path)).flat().join('\n');
+  return ast.map((item) => iter(item, pathPieces)).flat().join('\n');
 };
 
 export default plain;
