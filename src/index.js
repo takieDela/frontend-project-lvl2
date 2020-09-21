@@ -4,11 +4,7 @@ import parse from './parsers.js';
 import getDiff from './genDiff.js';
 import render from './formatters/index.js';
 
-const readFile = (filepath) => {
-  const filepathFull = path.resolve(process.cwd(), '__fixtures__', filepath);
-  return fs.readFileSync(filepathFull, 'utf-8');
-};
-
+const readFile = (filepath) => fs.readFileSync(path.resolve(filepath), 'utf-8');
 const getExtension = (filepath) => path.extname(filepath);
 
 export default (filepath1, filepath2, format = 'tree') => {
